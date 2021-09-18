@@ -1,0 +1,25 @@
+.hero {
+    height: calc(100vh - 62px);
+    background-image: url(../../images/hero-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__container{
+        position: relative;
+        height: 100%;
+    }
+
+    &__info{
+        position: absolute;
+        bottom: 65%;
+        padding: 23px 16px 17px 27px;
+        max-width: 549px;
+        width: 100%;
+        background-color: $blue;
+        color: white;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}

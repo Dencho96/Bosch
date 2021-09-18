@@ -29,9 +29,12 @@ p {
 body {
     overflow-x: hidden;
     background-color: white;
+    font-family: "BoschSans", sans-serif;
+    font-weight: 400;
 }
 
 .container {
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;

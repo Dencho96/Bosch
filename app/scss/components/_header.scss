@@ -1,3 +1,21 @@
 .header {
-    
+    background-color: $blue;
+
+    &__inner {
+        height: 62px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        color: white;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &+& {
+            margin-left: 55px;
+        }
+    }
 }
