@@ -1,0 +1,35 @@
+.footer {
+    padding: 70px 0 40px;
+    background-image: url("../../images/bg-light.jpg");
+
+    &__social {
+        justify-content: space-between;
+        max-width: 260px;
+        width: 100%;
+        margin: 0 auto 40px;
+    }
+
+    &__social-item {
+        &+& {
+            margin-left: 20px;
+        }
+    }
+
+    &__social-link {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        transition: opacity 0.2s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__copy {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #1B4675;
+    }
+}
