@@ -1,0 +1,60 @@
+.promo {
+
+    &__head {
+        height: 496px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &__container {
+        position: relative;
+        height: 100%;
+    }
+
+    &__box {
+        position: absolute;
+        bottom: 55%;
+        padding: 29px 23px 20px;
+        max-width: 450px;
+        width: 100%;
+        background-color: $blue;
+        color: white;
+    }
+
+    &__title {
+        @include block-title;
+        margin-bottom: 4px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &__main {
+        padding: 40px 0 94px;
+        background-color: $blue;
+    }
+
+    &__inner {
+        justify-content: space-between;
+    }
+
+    &__info {
+        padding: 0 38px;
+        max-width: 589px;
+        width: 100%;
+        background-color: white;
+    }
+
+    &__descr {
+        padding: 38px 0;
+        font-size: 19px;
+        line-height: 22px;
+
+        &+& {
+            border-top: 1px solid #C4C6C4;
+        }
+    }
+}
