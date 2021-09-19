@@ -1,0 +1,31 @@
+.stories {
+    padding: 95px 0 120px;
+    background-image: url('../../images/bg-light.jpg');
+
+    &__title {
+        margin-bottom: 7px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-transform: uppercase;
+    }
+
+    &__text{
+        margin-bottom: 55px;
+        max-width: 559px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &__inner {
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 285px;
+        width: 100%;
+        height: 507px;
+        background-color: #215287;
+    }
+}
