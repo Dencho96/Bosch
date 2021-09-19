@@ -1,0 +1,55 @@
+.warranty {
+    padding-top: 92px;
+    background-image: url('../../images/bg-light.jpg');
+    background-repeat: repeat;
+    
+    &__title {
+        @include block-title;
+        margin-bottom: 67px;
+        max-width: 713px;
+        width: 100%;
+    }
+
+    &__img {
+        width: 533px;
+        height: 508px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__item {
+        max-width: 584px;
+        width: 100%;
+
+        &+& {
+            margin-top: 30px;
+        }
+    }
+
+    &__item-title {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: uppercase;
+    }
+
+    &__item-text, &__item-link {        
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &__item-text {
+        margin-bottom: 10px;
+    }
+
+    &__item-link {
+        text-decoration: underline;
+        color: #005882;
+        transition: opacity 0.2s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
