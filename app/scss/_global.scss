@@ -27,7 +27,7 @@ p {
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     background-color: white;
     font-family: "BoschSans", sans-serif;
     font-weight: 400;
@@ -46,4 +46,8 @@ body {
 
 .text-red {
     color: $red;
+
+    @include maxw576 {
+        display: block;
+    }
 }

@@ -2,19 +2,44 @@
     padding: 92px 0 70px;
     background-image: url('../../images/bg-light.jpg');
     background-repeat: repeat;
+
+    @include maxw992 {
+        padding: 40px 0 60px;
+    }
+
+    @include maxw576 {
+        padding: 30px 0 45px;
+    }
     
     &__title {
         @include block-title;
         margin-bottom: 67px;
         max-width: 713px;
         width: 100%;
+
+        @include maxw992 {
+            margin-bottom: 0;
+        }
+    }
+
+    &__inner {
+        @include maxw992 {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__img {
+        margin-right: 20px;
         width: 533px;
         height: 508px;
         background-repeat: no-repeat;
         background-position: center;
+
+        @include maxw1205 {
+            background-size: contain;
+            height: 400px;
+        }
     }
 
     &__item {
@@ -32,11 +57,31 @@
         font-size: 24px;
         line-height: 28px;
         text-transform: uppercase;
+
+        @include maxw992 {
+            font-size: 20px;
+            line-height: 22px;
+        }
+
+        @include maxw576 {
+            font-size: 18px;
+            line-height: 22px;
+        }
     }
 
     &__item-text, &__item-link {        
         font-size: 18px;
         line-height: 22px;
+
+        @include maxw767 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        @include maxw576 {
+            font-size: 14px;
+            line-height: 18px;
+        }
     }
 
     &__item-text {

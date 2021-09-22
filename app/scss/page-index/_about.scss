@@ -2,18 +2,44 @@
     padding: 72px 0 121px;
     background-color: $blue;
 
+    @include maxw992 {
+        padding: 55px 0 65px;
+    }
+
+    @include maxw767 {
+        padding: 45px 0 50px;
+    }
+
+    @include maxw576 {
+        padding: 38px 0 44px;
+    }
+
     &__title {
         margin-bottom: 60px;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 42px;
-        text-transform: uppercase;
         color: white;
         max-width: 700px;
+        @include block-title;
+
+        @include maxw1205 {
+            margin-bottom: 30px;
+        }
+
+        @include maxw992 {
+            margin-bottom: 20px;
+        }
+
+        @include maxw767 {
+            margin-bottom: 12px;
+        }
     }
 
     &__inner {
         justify-content: space-between;
+
+        @include maxw992 {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__img {
@@ -22,6 +48,20 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+
+        @include maxw1205 {
+            width: 100%;
+            height: 320px;
+            background-size: contain;
+        }
+
+        @include maxw992 {
+            height: 280px;
+        }
+
+        @include maxw767 {
+            height: 240px;
+        }
     }
 
     &__advantages {
@@ -45,6 +85,18 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        
+        @include maxw767 {
+            margin-right: 10px;
+            max-width: 50px;
+            width: 100%;
+            height: 50px;
+        }
+
+        @include maxw576 {
+            max-width: 38px;
+            height: 38px;
+        }
     }
 
     &__advantages-box {
@@ -58,5 +110,25 @@
         font-weight: 700;
         line-height: 28px;
         text-transform: uppercase;
+
+        @include maxw767 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        @include maxw576 {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    &__advantages-text {
+        @include maxw767 {
+            font-size: 16px;
+        }
+
+        @include maxw576 {
+            font-size: 14px;
+        }
     }
 }

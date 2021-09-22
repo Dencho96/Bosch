@@ -1,5 +1,5 @@
 .products {
-
+    padding: 60px 0 50px;
     background-color: $blue;
 
     &__title {
@@ -11,9 +11,18 @@
 
     &__inner {
         justify-content: space-between;
+
+        @include maxw1205 {
+            justify-content: center;
+        }
+
+        @include maxw576 {
+            flex-wrap: wrap;
+        }
     }
 
     &__icon {
+        margin: 0 auto;
         width: 134px;
         height: 134px;
         background-repeat: no-repeat;
@@ -21,11 +30,25 @@
         background-size: contain;
     }
 
+    &__col {
+        &+& {
+            margin-left: 10px;
+        }
+
+        @include maxw1205 {
+            max-width: 350px;
+        }
+    }
+
     &__col-wrapper {
         flex-wrap: wrap;
         justify-content: space-between;
         max-width: 550px;
         width: 100%;
+
+        @include maxw1205 {
+            justify-content: center;
+        }
     }
 
     &__product-card {

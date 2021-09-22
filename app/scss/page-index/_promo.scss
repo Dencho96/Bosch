@@ -20,6 +20,11 @@
         width: 100%;
         background-color: $blue;
         color: white;
+
+        @include maxw576 {
+            padding: 21px 17px;
+            max-width: 227px;
+        }
     }
 
     &__title {
@@ -30,6 +35,11 @@
     &__text {
         font-size: 18px;
         line-height: 22px;
+
+        @include maxw576 {
+            font-size: 14px;
+            line-height: 18px;
+        }
     }
 
     &__main {
@@ -39,6 +49,11 @@
 
     &__inner {
         justify-content: space-between;
+
+        @include maxw1205 {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__info {
@@ -46,15 +61,52 @@
         max-width: 589px;
         width: 100%;
         background-color: white;
+
+        @include maxw1205 {
+            max-width: 750px;
+            margin-bottom: 25px;
+        }
     }
 
     &__descr {
         padding: 38px 0;
-        font-size: 19px;
+        font-size: 18px;
         line-height: 22px;
 
         &+& {
             border-top: 1px solid #C4C6C4;
+        }
+
+        @include maxw767 {
+            padding: 25px 0;
+            padding: 25px 0;
+            font-size: 16px;
+        }
+    }
+
+    &__product-wrapper {
+        @include maxw767 {
+            flex-wrap: wrap;
+        }
+
+        @include maxw576 {
+            
+            justify-content: space-around;
+        }
+    }
+
+    &__product {
+        &+& {
+            margin-left: 25px;
+
+            @include maxw767 {
+                margin-left: 15px;
+            }
+
+            @include maxw576 {
+                margin-left: 0;
+                margin-top: 10px;
+            }
         }
     }
 }

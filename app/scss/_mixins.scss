@@ -3,4 +3,37 @@
     line-height: 42px;
     font-weight: 700;
     text-transform: uppercase;
+
+    @include maxw992{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    @include maxw767{
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+@mixin maxw1205{
+    @media (max-width: 1205px){
+        @content;
+    }
+}
+
+@mixin maxw992{
+    @media (max-width: 992px){
+        @content;
+    }
+}
+
+@mixin maxw767{
+    @media (max-width: 767px){
+        @content;
+    }
+}
+
+@mixin maxw576{
+    @media (max-width: 576px){
+        @content;
+    }
 }

@@ -1,7 +1,11 @@
 .product-card {
     max-width: 260px;
     width: 100%;
+    height: 410px;
     background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
     &__head {
         padding: 17px 20px 11px;
@@ -34,6 +38,7 @@
 
     &__old-price {
         margin-bottom: 9px;
+        height: 14px;
         text-decoration: line-through;
         font-weight: 300;
     }

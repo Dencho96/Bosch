@@ -3,6 +3,18 @@
     background-image: url('../../images/bg-light.jpg');
     background-repeat: repeat;
 
+    @include maxw1205 {
+        padding: 90px 0 50px;
+    }
+
+    @include maxw992 {
+        padding: 60px 0 45px;
+    }
+
+    @include maxw767 {
+        padding: 35px 0 30px;
+    }
+
     &__title {
         @include block-title;
         margin-bottom: 21px;
@@ -14,11 +26,35 @@
         background-color: white;
         font-size: 20px;
         font-weight: 700;
+
+        @include maxw992 {
+            font-size: 18px;
+        }
+
+        @include maxw767 {
+            flex-direction: column;
+            align-items: center;
+            padding: 0 18px;
+            font-size: 16px;
+        }
+
+        @include maxw576 {
+            font-size: 14px;
+        }
     }
 
     &__item {
+        @include maxw767 {
+            width: 100%;
+        }
+
         &+& {
             border-left: 1px solid #C4C6C4;
+
+            @include maxw767 {
+                border-left: none;
+                border-top: 1px solid #C4C6C4;
+            }
         }
     }
 
@@ -32,6 +68,18 @@
         transition: color 0.25s;
         &:hover {
             color: $red;
+        }
+
+        @include maxw1205 {
+            padding: 0 30px;
+        }
+
+        @include maxw992 {
+            padding: 0 15px;
+        }
+
+        @include maxw767 {
+            padding: 28px 10px;
         }
     }
 }

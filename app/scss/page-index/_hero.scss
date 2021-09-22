@@ -16,10 +16,16 @@
         padding: 23px 16px 17px 27px;
         max-width: 549px;
         width: 100%;
-        background-color: $blue;
+        background: linear-gradient(90.1deg, #153B65 0.62%, #215388 99.82%), $blue;
         color: white;
-        font-size: 36px;
-        font-weight: 700;
-        text-transform: uppercase;
+        @include block-title;
+
+        @include maxw767 {
+            max-width: 464px;
+        }
+
+        @include maxw576 {
+            max-width: 290px;
+        }
     }
 }
