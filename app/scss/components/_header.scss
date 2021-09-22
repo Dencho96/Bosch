@@ -21,16 +21,18 @@
         color: white;
 
         @include maxw992 {
+            display: none;
             position: absolute;
             top: 60px;
             left: 0;
-            display: flex;
             flex-direction: column;
             align-items: center;
+            padding-top: 45px;
             width: 100%;
+            height: calc(100vh - 62px);
             z-index: 5;
             background-color: $blue;
-        }
+        }    
     }
 
     &__item {
@@ -51,6 +53,12 @@
     }
 
     &__link {
+        transition: color 0.2s;
+
+        &:hover {
+            color: $red;
+        }
+
         @include maxw992 {
             padding: 12px 0;
             width: 100%;
